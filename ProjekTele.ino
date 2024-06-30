@@ -5,8 +5,8 @@
 #include <Wire.h>
 
 #define BOT_TOKEN "6760055305:AAFqvKYjkkOZyqkT0klgqR042KmEXSmtPk8"
-#define SSID "realme 3"
-#define PASSWORD "123empat"
+#define SSID "vivo 1901"
+#define PASSWORD "12345678"
 
 const char* ssid = SSID;
 const char* password = PASSWORD;
