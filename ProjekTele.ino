@@ -182,7 +182,7 @@ void loop() {
       lcd.print("3 Slots Free");
       lcd.setCursor(0, 1);
       lcd.print("Slot 1, 2, 3 Free");
-      sendTelegramMessage("1269348943", "3 Slots Free");
+      sendTelegramMessage("1450805917", "3 Slots Free");
     }
     else if ((d1 > distanceThreshold && d2 > distanceThreshold) || 
              (d2 > distanceThreshold && d3 > distanceThreshold) || 
@@ -193,21 +193,21 @@ void loop() {
         lcd.print("2 Slots Free");
         lcd.setCursor(0, 1);
         lcd.print("Slot 1, 2 Free");
-        sendTelegramMessage("1269348943", "2 Slots Free: Slot 1, 2 Free");
+        sendTelegramMessage("1450805917", "2 Slots Free: Slot 1, 2 Free");
       }
       else if (d1 > distanceThreshold && d3 > distanceThreshold) {
         Serial.println("Slot 1 and 3 are Free");
         lcd.print("2 Slots Free");
         lcd.setCursor(0, 1);
         lcd.print("Slot 1, 3 Free");
-        sendTelegramMessage("1269348943", "2 Slots Free: Slot 1, 3 Free");
+        sendTelegramMessage("1450805917", "2 Slots Free: Slot 1, 3 Free");
       }
       else {
         Serial.println("Slot 2 and 3 are Free");
         lcd.print("2 Slots Free");
         lcd.setCursor(0, 1);
         lcd.print("Slot 2, 3 Free");
-        sendTelegramMessage("1269348943", "2 Slots Free: Slot 2, 3 Free");
+        sendTelegramMessage("1450805917", "2 Slots Free: Slot 2, 3 Free");
       }
     }
     else if (d1 < distanceThreshold && d2 < distanceThreshold && d3 < distanceThreshold) {
@@ -216,7 +216,7 @@ void loop() {
       lcd.print("No Slots Free");
       lcd.setCursor(0, 1);
       lcd.print("Parking Full");
-      sendTelegramMessage("1269348943", "No Slots Free: Parking Full");
+      sendTelegramMessage("1450805917", "No Slots Free: Parking Full");
     }
     else {
       Serial.println("1 Slot Free");
@@ -225,21 +225,21 @@ void loop() {
         lcd.print("1 Slot Free");
         lcd.setCursor(0, 1);
         lcd.print("Slot 1 Free");
-        sendTelegramMessage("1269348943", "1 Slot Free: Slot 1 Free");
+        sendTelegramMessage("1450805917", "1 Slot Free: Slot 1 Free");
       }
       else if (d2 > distanceThreshold) {
         Serial.println("Slot 2 is Free");
         lcd.print("1 Slot Free");
         lcd.setCursor(0, 1);
         lcd.print("Slot 2 Free");
-        sendTelegramMessage("1269348943", "1 Slot Free: Slot 2 Free");
+        sendTelegramMessage("1450805917", "1 Slot Free: Slot 2 Free");
       }
       else {
         Serial.println("Slot 3 is Free");
         lcd.print("1 Slot Free");
         lcd.setCursor(0, 1);
         lcd.print("Slot 3 Free");
-        sendTelegramMessage("1269348943", "1 Slot Free: Slot 3 Free");
+        sendTelegramMessage("1450805917", "1 Slot Free: Slot 3 Free");
       }
     }
 
